@@ -1,0 +1,414 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>亿级流量电商详情页大型缓存架构实战 · 亿级流量电商详情页系统实战</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="gurenn-z">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="doc/20200723-搭建4个节点的CentOS集群.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    亿级流量电商详情页大型缓存架构实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                    
+                    20200723-搭建4个节点的CentOS集群
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html#t1">
+            
+                    
+                    在虚拟机中安装 CentOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html#t2">
+            
+                    
+                    配置虚拟机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html#t3">
+            
+                    
+                    关闭防火墙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html#t4">
+            
+                    
+                    配置 yum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html#t5">
+            
+                    
+                    配置 host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html#t6">
+            
+                    
+                    安装 jdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html#t7">
+            
+                    
+                    安装 Perl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="doc/20200723-搭建4个节点的CentOS集群.html">
+            
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html#t8">
+            
+                    
+                    配置 4 台 CentOS 为 ssh 免密码互相通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >亿级流量电商详情页大型缓存架构实战</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="eshop-cache">eshop-cache</h1>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x6700;&#x540E;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2020-08-05 15:08:59
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="doc/20200723-搭建4个节点的CentOS集群.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 20200723-搭建4个节点的CentOS集群">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"亿级流量电商详情页大型缓存架构实战","level":"1.1","depth":1,"next":{"title":"20200723-搭建4个节点的CentOS集群","level":"1.2","depth":1,"path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md","articles":[{"title":"在虚拟机中安装 CentOS","level":"1.2.1","depth":2,"anchor":"#t1","path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md#t1","articles":[]},{"title":"配置虚拟机网络","level":"1.2.2","depth":2,"anchor":"#t2","path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md#t2","articles":[]},{"title":"关闭防火墙","level":"1.2.3","depth":2,"anchor":"#t3","path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md#t3","articles":[]},{"title":"配置 yum","level":"1.2.4","depth":2,"anchor":"#t4","path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md#t4","articles":[]},{"title":"配置 host","level":"1.2.5","depth":2,"anchor":"#t5","path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md#t5","articles":[]},{"title":"安装 jdk","level":"1.2.6","depth":2,"anchor":"#t6","path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md#t6","articles":[]},{"title":"安装 Perl","level":"1.2.7","depth":2,"anchor":"#t7","path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md#t7","articles":[]},{"title":"配置 4 台 CentOS 为 ssh 免密码互相通信","level":"1.2.8","depth":2,"anchor":"#t8","path":"doc/20200723-搭建4个节点的CentOS集群.md","ref":"doc/20200723-搭建4个节点的CentOS集群.md#t8","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","prism","search-pro","back-to-top-button","chapter-fold","expandable-chapters","splitter","copy-code-button","pageview-count","popup","lightbox","github","tbfed-pagefooter","flexible-alerts","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件最后修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"github":{"url":"https://github.com/gurenn-z"},"livereload":{},"splitter":{},"search-pro":{},"popup":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isShowTocTitleIcon":true},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":{"de":"Achtung","en":"Attention"}},"note":{"className":"info","icon":"fa fa-info-circle","label":{"de":"Hinweis","en":"Note"}},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":{"de":"Tipp","en":"Tip"}},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":{"de":"Warnung","en":"Warning"}},"comment":{"label":"Comment","icon":"fa fa-comments","className":"info"}},"links":{"sidebar":{"个性链接1":"https://www.baidu.com","个性链接2":"https://www.baidu.com"}},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"gurenn-z","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"readme.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"亿级流量电商详情页系统实战","language":"zh-hans","gitbook":"*","description":"实战项目日历"},"file":{"path":"README.md","mtime":"2020-08-05T07:08:59.340Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-05T07:09:18.425Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
