@@ -1,0 +1,87 @@
+{
+    "title": "亿级流量电商详情页系统实战",
+    "author": "gurenn-z",
+    "description": "实战项目日历",
+    "language": "zh-hans",
+    "structure": {
+        "readme": "readme.md"
+    },
+    "plugins": [
+        "-lunr",
+        "-search",
+        "-highlight",
+        "prism",
+        "search-pro",
+        "back-to-top-button",
+        "chapter-fold",
+        "expandable-chapters",
+        "splitter",
+        "copy-code-button",
+        "pageview-count",
+        "popup",
+        "lightbox",
+        "github",
+        "tbfed-pagefooter",
+        "flexible-alerts"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "isShowTocTitleIcon": true
+        },
+
+        "github": {
+            "url": "https://github.com/gurenn-z"
+        },
+
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-okaidia.css"
+            ]
+        },
+
+        "tbfed-pagefooter": {
+            "copyright": "",
+            "modify_label": "该文件最后修改时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+
+        "flexible-alerts": {
+            "style": "callout",
+            "note": {
+                "label": {
+                    "de": "Hinweis",
+                    "en": "Note"
+                }
+            },
+            "tip": {
+                "label": {
+                    "de": "Tipp",
+                    "en": "Tip"
+                }
+            },
+            "warning": {
+                "label": {
+                    "de": "Warnung",
+                    "en": "Warning"
+                }
+            },
+            "danger": {
+                "label": {
+                    "de": "Achtung",
+                    "en": "Attention"
+                }
+            },
+            "comment": {
+                "label": "Comment",
+                "icon": "fa fa-comments",
+                "className": "info"
+            }
+        },
+        "links": {
+            "sidebar": {
+                "个性链接1": "https://www.baidu.com",
+                "个性链接2": "https://www.baidu.com"
+            }
+        }
+    }
+}
